@@ -1,0 +1,26 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+class BankAccount {
+   double amount = 25000.0;
+
+   BankAccount() {
+   }
+
+   public double CheckBalance() {
+      return this.amount;
+   }
+
+   public double Withdraw(double var1) {
+      if (var1 > this.amount) {
+         System.out.println("Insufficient balance.");
+         return this.amount;
+      } else {
+         this.amount -= var1;
+         return this.amount;
+      }
+   }
+
+   public double deposit(double var1) {
+      this.amount += var1;
+      return this.amount;
+   }
+}
